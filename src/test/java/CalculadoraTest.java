@@ -5,10 +5,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CalculadoraTest {
 
     @Test
-    public void SumaTest(){
+    public void SumarPositivosTest(){
 
         double actual = Calculadora.Sumar(2,2);;
         double expected = 4;
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void SumarNegativosTest(){
+
+        double actual = Calculadora.Sumar(-2,-2);;
+        double expected = -4;
 
         assertEquals(expected, actual);
     }
